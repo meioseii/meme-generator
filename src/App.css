@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+* {
+  font-family: Karla, sans-serif;
+  border: px solid black;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.left-header {
+  width: 271.5px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-logo {
+  width: 46.5px;
+  height: 39px;
+}
+
+.header-title {
+  width: 271px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.1em;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 21px;
+}
+
+.header-desc {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.5px;
+  text-align: right;
+}
