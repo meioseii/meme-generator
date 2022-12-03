@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -57,6 +57,18 @@ body {
   text-align: right;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main img {
+  padding-bottom: 40px;
+  max-width: 100%;
+  /* max-height: 50%; */
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -68,7 +80,7 @@ body {
 .input-container {
   width: 730px;
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .input-container input {
