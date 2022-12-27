@@ -9,8 +9,6 @@ export default function Meme() {
         randomImage: ""
     })
 
-    const [allMemeImages, setAllMemeImages] = useState(memesData)
-
     function getMemeImage() {
         const memesArray = memesData.data.memes
         const random = Math.floor(Math.random() * memesArray.length)
@@ -21,17 +19,44 @@ export default function Meme() {
         }))
     }
 
-    
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevMeme => {
+            return {
+                ...prevMeme,
+                [name] : value
+            }
+        })
+    }
+
     return (
         <div className="main">
-            <section className="form">
+            <form>
                 <div className="input-container">
-                    <input type="text" placeholder="Top text" />
-                    <input type="text" placeholder="Bottom text"/>
+                    <input
+                        type="text"
+                        placeholder="Top text"
+                        name="topText"
+                        value={meme.topText}
+                        onChange={handleChange}
+                    />
+
+                    <input 
+                        type="text" 
+                        placeholder="Bottom text"
+                        name="bottomText"
+                        value={meme.bottomText}
+                        onChange={handleChange}
+                    />
                 </div>
-                <button className="button" onClick={getMemeImage}>Get a new meme image 🖼️</button>
-            </section>
-            {<img src={meme.randomImage} />}
+                <button type="button" className="button" onClick={getMemeImage}>Get a new meme image 🖼️</button>
+            </form>
+
+            <div className="meme">
+                <img src={meme.randomImage} className="meme-image"/>
+                <h2 className="meme-text top">{meme.topText}</h2>
+                <h2 className="meme-text bottom">{meme.bottomText}</h2>
+            </div>
         </div>
     )
 }
