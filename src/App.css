@@ -16,15 +16,17 @@ body {
 .nav-bar {
   display: flex;
   padding: 20px 40px;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
 }
 
-.left-header {
+.header {
   width: 271.5px;
   height: 38px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
 }
 
@@ -40,13 +42,6 @@ body {
   font-size: 30px;
   line-height: 36px;
   letter-spacing: -0.1em;
-}
-
-.right-header {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  height: 21px;
 }
 
 .header-desc {
