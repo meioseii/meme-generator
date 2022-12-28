@@ -24,6 +24,8 @@ export default function Meme() {
             ...prevMeme,
             randomImage: url
         }))
+        meme.topText = "";
+        meme.bottomText = ""
     }
 
     function handleChange(event) {
