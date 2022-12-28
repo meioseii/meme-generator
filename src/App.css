@@ -18,7 +18,7 @@ body {
   padding: 20px 40px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #302280 1.18%, #266bd3 100%);
 }
 
 .header {
@@ -93,7 +93,7 @@ form {
   height: 60px;
   border-radius: 5px;
   border: none;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  background: linear-gradient(90deg, #302280 1.18%, #266bd3 100%);
 }
 
 .meme {
