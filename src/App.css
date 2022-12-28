@@ -102,6 +102,7 @@ form {
 
 .meme-image {
   max-width: 100%;
+  max-height: 600px;
   border-radius: 3px;
 }
 
@@ -114,7 +115,7 @@ form {
   margin: 15px 0;
   padding: 0 10px;
   font-family: impact, sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
   color: white;
   letter-spacing: 2px;
